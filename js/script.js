@@ -28,8 +28,8 @@ window.addEventListener('load', e => {
 
 loginButton.addEventListener('click', e => {
     e.preventDefault();
-    const email = formField.email.value;
-    const password = formField.password.value;
+    let email = formField.email.value;
+    let password = formField.password.value;
     // logIn(email, password, users);
     if(email && password){
         loggedIn = true;
