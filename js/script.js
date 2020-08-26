@@ -54,6 +54,7 @@ statusField.forEach( status => {
 
 
 logoutButton.addEventListener('click', e => {
+    e.preventDefault();
     loggedIn = false;
     updateSection(loggedIn);
 })
