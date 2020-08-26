@@ -6,13 +6,17 @@
 
 body {
     background: rgb(176, 226, 176);
-    font-size: 1.2rem;
 }
 
+h1{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
 main{
     max-width: 90vw;
     background: white;
-    padding: 2rem;
+    padding: 1rem;
     margin: auto;
     margin-top: 2rem;
     display: flex;
@@ -35,10 +39,32 @@ input{
     height: 2rem;
 }
 
-button{
+#login, #logout {
     margin-top: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem .4rem;
     background: green;
     color: white;
     font-size: 1.2rem;
+}
+
+#logout {
+    background: red;
+}
+#login {
+    background: green;
+}
+
+.status{
+    margin-top: 1rem;
+    padding: 0.3rem .4rem;
+    background: red;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.user {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }

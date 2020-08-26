@@ -7,21 +7,43 @@
 </head>
 <body>
     <main class="main">
+        <header>
+            <h1>Attendance Register</h1>
+            <div id="errors"></div>
+        </header>
         <section class="login-section">
-            <form action="">
+            <form action="" method="POST">
                 <div class="form-input">
                     <label for="email">Email</label>
-                    <input type="text" name="email" id="email">
+                    <input type="email" name="email" id="email" required>
                 </div>
                 <div class="form-input">
                     <label for="password">Password</label>
-                    <input type="text" name="password" id="password">
+                    <input type="password" name="password" id="password" required autocomplete="true">
                 </div>
-                <button type="submit">Login</button>
+                <button type="submit" id="login">Login</button>
             </form>
         </section>
         <section class="user-section">
-
+            <section>
+                <div class="users">
+                    <div class="user">
+                        <p>Paul Onyekwelu</p>
+                        <button class="status">Absent</button>
+                    </div>
+                    <div class="user">
+                        <p>Tony Okoye</p>
+                        <button class="status">Absent</button>
+                    </div>
+                    <div class="user">
+                        <p>Amina Abdul</p>
+                        <button class="status">Absent</button>
+                    </div>
+                </div>
+            </section>
+            <div>
+                <button id="logout">Logout</button>
+            </div>
         </section>
     </main>
     <script src="./js/script.js"></script>
