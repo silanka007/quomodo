@@ -1,7 +1,7 @@
 // variable declaration
 const loginSection = document.querySelector('.login-section');
 const loginButton = document.querySelector('#login');
-const logoutButton = document.querySelector('#login');
+const logoutButton = document.querySelector('#logout');
 const formField = document.querySelector('form');
 const userSection = document.querySelector('.user-section');
 const errorsField = document.querySelector('#errors');
@@ -33,6 +33,8 @@ loginButton.addEventListener('click', e => {
     // logIn(email, password, users);
     if(email && password){
         loggedIn = true;
+        email = '';
+        password = '';
         updateSection(loggedIn);
     }
 })
